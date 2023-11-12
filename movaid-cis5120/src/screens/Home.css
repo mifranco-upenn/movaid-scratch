@@ -1,0 +1,107 @@
+.scrollable-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+    max-width: 390px;
+    /* Adjust this based on the desired iPhone screen width */
+    width: 100%;
+    /* overflow-y: auto; */
+}
+
+.widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 371px;
+    height: 146px;
+    background-color: burlywood;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.widget-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.purchase-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.purchase-list-item {
+    flex: 0 0 50%;
+    margin-bottom: 10px;
+}
+
+
+/* To-Do Widget Styles */
+.todo-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.todo-item {
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.priority-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-size: cover;
+}
+
+.priority-icon.high {
+    background-image: url('../static/img/priority-marker-red.png');
+}
+
+.priority-icon.medium {
+    background-image: url('../static/img/priority-marker-yellow.png');
+}
+
+.priority-icon.low {
+    background-image: url('../static/img/priority-marker-green.png');
+}
+
+.full-list-text {
+    position: absolute;
+    bottom: 1px; /* Add some space from the bottom */
+    right: 10px; /* Add some space from the right */
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.header {
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.screen-container {
+    width: 390px;
+    height: 854px;
+    max-width: 390px;
+    max-height: 854px;
+}
