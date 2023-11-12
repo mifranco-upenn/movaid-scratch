@@ -8,7 +8,7 @@ function Home() {
     const purchaseItems = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5']
     const todoItems = [
         {text: 'This is the first todo item', priority: 'high'},
-        {text: 'This is the second todo item', priority: 'medium'},
+        {text: 'This is the second todo item, with overflow', priority: 'medium'},
         {text: 'This is the third todo item', priority: 'low'}
     ]
 
@@ -32,6 +32,14 @@ function Home() {
 
                 <div className="widget-label">To-Do</div>
                 <div className="widget">
+                    <ul className="todo-list">
+                        {todoItems.map((item, index) => (
+                          <li key={index} className="todo-item">
+                            <div className="todo-item-text">{item.text}</div>
+                            <img src={`/static/img/${item.priority}-priority-icon.png`} alt={item.priority} className="priority-icon"/>
+                          </li>  
+                        ))}
+                    </ul>
                     <p className="full-list-text">Open Full List {">"}</p>
                 </div>
 
