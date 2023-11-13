@@ -17,7 +17,7 @@
     height: 146px;
     background-color: rgba(213, 177, 149, .4);
     border-radius: 20px;
-    margin: 10px;
+    margin-bottom: 30px;
     padding: 20px;
     box-sizing: border-box;
     position: relative;
@@ -25,11 +25,13 @@
 
 .widget-label {
     font-weight: bold;
+    font-size: 20px;
     margin-bottom: 10px;
     text-align: left;
     padding-left: 10px;
 }
 
+/* Purchase List Widget Styling */
 .purchase-list-container {
     display: flex;
     flex-wrap: wrap;
@@ -44,11 +46,11 @@
 }
 
 
-/* To-Do Widget Styles */
+/* To-Do Widget Styling */
 .todo-list {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 10px;
+    padding-left: 1px;
     margin: 0;
 }
 

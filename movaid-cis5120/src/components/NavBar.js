@@ -6,18 +6,18 @@ import { Link } from "react-router-dom";
 const NavIcon = ({ label, to, selected }) => {
     return (
         <Link to={to} className={`nav-icon ${selected ? 'selected' : ''}`}>
-            {label}
+            <img src={selected ? `/static/img/navbar-${label}-bold.svg` : `/static/img/navbar-${label}.svg`} alt={label}/>
         </Link>
     );
 };
 
 const NavBar = ({ selectedIcon }) => {
     const navIcons = [
-        {label: 'Home', to: '/'},
-        {label: 'List', to: '/list'},
-        {label: 'Todo', to: '/todo'},
-        {label: 'Plan', to: '/plan'},
-        {label: 'City', to: '/city'}
+        {label: 'home', to: '/'},
+        {label: 'list', to: '/list'},
+        {label: 'todo', to: '/todo'},
+        {label: 'plan', to: '/plan'},
+        {label: 'discover', to: '/discover'}
     ];
 
     return (

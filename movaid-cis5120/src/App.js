@@ -10,7 +10,7 @@ function App() {
         <Route path='/list' element={<Home />} />
         <Route path='/todo' element={<Home />} />
         <Route path='/plan' element={<Home />} />
-        <Route path='/city' element={<Home />} />
+        <Route path='/discover' element={<Home />} />
       </Routes>
     </BrowserRouter>
   );

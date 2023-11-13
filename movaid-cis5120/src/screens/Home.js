@@ -11,11 +11,15 @@ function Home() {
         {text: 'This is the second todo item, with overflow', priority: 'medium'},
         {text: 'This is the third todo item', priority: 'low'}
     ]
+    const planEvents = [
+        {}
+    ]
+    const discoverCity = ['Things to do in Chinatown', 'Best Cheesesteaks in Philly', 'Trails around Philadelphia']
 
     return (
         <div className="screen-container">
             <div className="header">
-                <img></img>
+                {/* <img></img> */}
                 <h1>Good evening, John!</h1>
                 <p>You are <strong>3 days</strong> away from moving into 123 Main Street.</p>
             </div>
@@ -43,14 +47,19 @@ function Home() {
                     <p className="full-list-text">Open Full List {">"}</p>
                 </div>
 
-                <div className="widget-label">Widget</div>
+                <div className="widget-label">Move-In Plan</div>
                 <div className="widget">
                     <p>Widget Content</p>
                 </div>
 
-                <div className="widget-label">Widget</div>
+                <div className="widget-label">Discover Philadelphia</div>
                 <div className="widget">
-                    <p>Widget Content</p>
+                    <ul>
+                        {discoverCity.map((item, index) => (
+                            <li>{item}</li>
+                        ))}
+                    </ul>
+                    <p className="full-list-text">Open All Recommendations {">"}</p>
                 </div>
             </div>
             <NavBar selectedIcon={'Home'} />
